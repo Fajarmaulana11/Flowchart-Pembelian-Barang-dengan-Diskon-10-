@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-24 01:50:31 AM"/>
+        <attribute name="created" value="SFA7TEFQVE9QLTZENEdLVVY5OzIwMjItMDktMjM7MDc6NDU6MjMgUE07MjQ5NA=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLTZENEdLVVY5OzIwMjItMDktMjQ7MDE6NTA6MzEgQU07MzsyNTc5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama, prodi" type="String" array="False" size=""/>
+            <declare name="na" type="Integer" array="False" size=""/>
+            <output expression="&quot;Nama =&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Nomor Antrian =&quot;" newline="True"/>
+            <input variable="na"/>
+            <output expression="&quot;Program Studi =&quot;" newline="True"/>
+            <input variable="prodi"/>
+            <if expression="na % 2 = 0">
+                <then>
+                    <declare name="i, a" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Input Perulangan =&quot;" newline="True"/>
+                    <input variable="a"/>
+                    <for variable="i" start="1" end="a" direction="inc" step="1">
+                        <declare name="b1, b2, b3, jb, d, bayar" type="Integer" array="False" size=""/>
+                        <output expression="&quot;Harga Barang 1 =&quot;" newline="True"/>
+                        <input variable="b1"/>
+                        <output expression="&quot;Harga Barang 2 =&quot;" newline="True"/>
+                        <input variable="b2"/>
+                        <output expression="&quot;Harga Barang 3 =&quot;" newline="True"/>
+                        <input variable="b3"/>
+                        <assign variable="jb" expression="b1+b2+b3"/>
+                        <if expression="jb &gt;= 50000">
+                            <then>
+                                <assign variable="d" expression="jb*10/100"/>
+                                <assign variable="bayar" expression="jb - d"/>
+                                <output expression="&quot;Struk Pembelian Barang&quot;" newline="True"/>
+                                <output expression="&quot;Nama =&quot;" newline="True"/>
+                                <output expression="nama" newline="True"/>
+                                <output expression="&quot;Nomor Antrian =&quot;" newline="True"/>
+                                <output expression="na" newline="True"/>
+                                <output expression="&quot;Program Studi =&quot;" newline="True"/>
+                                <output expression="prodi" newline="True"/>
+                                <output expression="&quot;Pembelian Barang&quot;" newline="True"/>
+                                <output expression="&quot;Harga Barang 1 =&quot;" newline="True"/>
+                                <output expression="b1" newline="True"/>
+                                <output expression="&quot;Harga Barang 2 =&quot;" newline="True"/>
+                                <output expression="b2" newline="True"/>
+                                <output expression="&quot;Harga Barang 3 =&quot;" newline="True"/>
+                                <output expression="b3" newline="True"/>
+                                <output expression="&quot;Jumlah Belanja =&quot;" newline="True"/>
+                                <output expression="jb" newline="True"/>
+                                <output expression="&quot;Diskon 10% =&quot;" newline="True"/>
+                                <output expression="d" newline="True"/>
+                                <output expression="&quot;Total Pembayaran =&quot;" newline="True"/>
+                                <output expression="bayar" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="d" expression="0"/>
+                                <assign variable="bayar" expression="jb"/>
+                            </else>
+                        </if>
+                    </for>
+                </then>
+                <else>
+                    <declare name="i" type="Integer" array="False" size=""/>
+                    <for variable="i" start="0" end="2" direction="inc" step="1">
+                        <declare name="b1, b2, b3, jb, d, bayar" type="Integer" array="False" size=""/>
+                        <output expression="&quot;Harga Barang 1 =&quot;" newline="True"/>
+                        <input variable="b1"/>
+                        <output expression="&quot;Harga Barang 2 =&quot;" newline="True"/>
+                        <input variable="b2"/>
+                        <output expression="&quot;Harga Barang 3 =&quot;" newline="True"/>
+                        <input variable="b3"/>
+                        <assign variable="jb" expression="b1+b2+b3"/>
+                        <if expression="jb &gt;= 50000">
+                            <then>
+                                <assign variable="d" expression="jb*10/100"/>
+                                <assign variable="bayar" expression="jb - d"/>
+                                <output expression="&quot;Struk Pembelian Barang&quot;" newline="True"/>
+                                <output expression="&quot;Nama =&quot;" newline="True"/>
+                                <output expression="nama" newline="True"/>
+                                <output expression="&quot;Nomor Antrian =&quot;" newline="True"/>
+                                <output expression="na" newline="True"/>
+                                <output expression="&quot;Program Studi =&quot;" newline="True"/>
+                                <output expression="prodi" newline="True"/>
+                                <output expression="&quot;Pembelian Barang&quot;" newline="True"/>
+                                <output expression="&quot;Harga Barang 1 =&quot;" newline="True"/>
+                                <output expression="b1" newline="True"/>
+                                <output expression="&quot;Harga Barang 2 =&quot;" newline="True"/>
+                                <output expression="b2" newline="True"/>
+                                <output expression="&quot;Harga Barang 3 =&quot;" newline="True"/>
+                                <output expression="b3" newline="True"/>
+                                <output expression="&quot;Jumlah Belanja =&quot;" newline="True"/>
+                                <output expression="jb" newline="True"/>
+                                <output expression="&quot;Diskon 10% =&quot;" newline="True"/>
+                                <output expression="d" newline="True"/>
+                                <output expression="&quot;Total Pembayaran =&quot;" newline="True"/>
+                                <output expression="bayar" newline="True"/>
+                            </then>
+                            <else>
+                                <assign variable="d" expression="0"/>
+                                <assign variable="bayar" expression="jb"/>
+                                <output expression="&quot;Struk Pembelian Barang&quot;" newline="True"/>
+                                <output expression="&quot;Nama =&quot;" newline="True"/>
+                                <output expression="nama" newline="True"/>
+                                <output expression="&quot;Nomor Antrian =&quot;" newline="True"/>
+                                <output expression="na" newline="True"/>
+                                <output expression="&quot;Program Studi =&quot;" newline="True"/>
+                                <output expression="prodi" newline="True"/>
+                                <output expression="&quot;Pembelian Barang&quot;" newline="True"/>
+                                <output expression="&quot;Harga Barang 1 =&quot;" newline="True"/>
+                                <output expression="b1" newline="True"/>
+                                <output expression="&quot;Harga Barang 2 =&quot;" newline="True"/>
+                                <output expression="b2" newline="True"/>
+                                <output expression="&quot;Harga Barang 3 =&quot;" newline="True"/>
+                                <output expression="b3" newline="True"/>
+                                <output expression="&quot;Jumlah Belanja =&quot;" newline="True"/>
+                                <output expression="jb" newline="True"/>
+                                <output expression="&quot;Diskon 10% =&quot;" newline="True"/>
+                                <output expression="d" newline="True"/>
+                                <output expression="&quot;Total Pembayaran =&quot;" newline="True"/>
+                                <output expression="bayar" newline="True"/>
+                            </else>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
